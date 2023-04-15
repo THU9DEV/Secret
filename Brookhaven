@@ -1287,7 +1287,7 @@ local Player = Home:Dropdown("Dropdown",Plr,function(value)
 end)
 
 Home:Button("Refresh",function()
-table.clear(Plr)
+Player:Clear()
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
    table.insert(Plr,v.Name)
 end
