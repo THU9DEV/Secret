@@ -1252,7 +1252,7 @@ Main:Seperator("Sing")
 
 local Weapon = {
  "หยุดรักเธอไม่ได้แล้ว",
- "2",
+ "จอร์จซาร่า",
  "3"
 }
 
@@ -1263,6 +1263,8 @@ end)
 Main:Button("Sing",function()
 if _G.Song == "หยุดรักเธอไม่ได้แล้ว" then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/THU9DEV/sing/main/SUN'))()
+    elseif _G.Song == "จอร์จซาร่า" then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/THU9DEV/Sing2/main/Gorge-N-Sara'))()
     end
 end)
 
